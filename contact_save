@@ -1,0 +1,12 @@
+import uiautomator2 as ui2
+a=ui2.connect("emulator-5554") #get from adb devices
+print(a.info)
+a(text="Phone").click()
+a(text="Create new contact").click()
+a(text="First name").set_text("pani")
+a(text="Last name").set_text("poori")
+a(text="Phone").set_text("8790564591")
+a(text="SAVE").click()
+#a(text="back").click()
+#a(text="back").click()
+a(text="Home").click()
